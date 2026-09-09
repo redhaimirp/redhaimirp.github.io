@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情色漫画-情色漫画分级阅读与安全指南</title>
+    <meta name="description" content="了解情色漫画的定义、常见题材、分级体系、阅读平台选择及安全注意事项，帮助成年读者理性选择适合自身审美偏好的成人漫画作品。">
+    <meta name="keywords" content="情色漫画,成人漫画,限制级漫画,漫画分级,阅读指南,成人向漫画推荐,安全阅读">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #f6f3f0;
+            color: #2d2a26;
+            line-height: 1.8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* header */
+        .site-header {
+            background: #1e1b18;
+            color: #f0eae4;
+            padding: 18px 0;
+            border-bottom: 4px solid #c9a77d;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .brand h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #f0eae4;
+        }
+        .brand p {
+            font-size: 0.9rem;
+            color: #b5a595;
+            margin-top: 2px;
+        }
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+        .main-nav a {
+            color: #d9cfc3;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 6px 4px;
+            border-bottom: 2px solid transparent;
+            transition: color .2s, border-color .2s;
+        }
+        .main-nav a:hover {
+            color: #e8c9a8;
+            border-bottom-color: #c9a77d;
+        }
+        /* hero */
+        .hero {
+            background: linear-gradient(135deg, #2c2823 0%, #453b32 100%);
+            color: #f5efe8;
+            padding: 70px 0 90px;
+            text-align: center;
+            position: relative;
+        }
+        .hero h2 {
+            font-size: 2.6rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+        .hero h2 span {
+            color: #e6b98c;
+        }
+        .hero p {
+            max-width: 780px;
+            margin: 0 auto 28px;
+            font-size: 1.2rem;
+            color: #d6c9bc;
+        }
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+        .hero-tags span {
+            background: rgba(255,255,255,0.08);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            border: 1px solid #6b5a4c;
+        }
+        /* intro section */
+        .intro-section {
+            background: #fff;
+            padding: 60px 0;
+            margin-top: -20px;
+            border-radius: 24px 24px 0 0;
+            box-shadow: 0 -8px 30px rgba(0,0,0,0.04);
+        }
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .intro-text h3 {
+            font-size: 1.8rem;
+            color: #2d2a26;
+            margin-bottom: 16px;
+            border-left: 6px solid #c9a77d;
+            padding-left: 18px;
+        }
+        .intro-text p {
+            margin-bottom: 16px;
+            color: #4a443e;
+        }
+        .intro-facts {
+            background: #f8f4ef;
+            border-radius: 16px;
+            padding: 28px;
+        }
+        .intro-facts h4 {
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            color: #5a3f2b;
+        }
+        .intro-facts ul {
+            list-style: none;
+        }
+        .intro-facts li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e4dbd0;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        .intro-facts li:last-child {
+            border-bottom: none;
+        }
+        .intro-facts .badge {
+            background: #c9a77d;
+            color: #1e1b18;
+            min-width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+            margin-top: 6px;
+        }
+        /* categories */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            position: relative;
+            font-weight: 700;
+        }
+        .section-title:after {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: #c9a77d;
+            margin: 16px auto 0;
+            border-radius: 2px;
+        }
+        .cat-section {
+            padding: 70px 0;
+        }
+        .cat-section.alt {
+            background: #fff;
+        }
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .cat-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            border: 1px solid #ede6dd;
+            transition: transform .2s, box-shadow .2s;
+        }
+        .cat-section.alt .cat-card {
+            background: #faf7f3;
+        }
+        .cat-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+        .cat-icon {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+        }
+        .cat-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #3e342c;
+        }
+        .cat-card p {
+            font-size: 0.95rem;
+            color: #5c534a;
+        }
+        /* rating guide */
+        .rating-table-wrap {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 6px 30px rgba(0,0,0,0.05);
+            margin-top: 30px;
+        }
+        .rating-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .rating-table th {
+            background: #2c2823;
+            color: #f0eae4;
+            padding: 14px 16px;
+            text-align: left;
+            font-size: 1rem;
+        }
+        .rating-table td {
+            padding: 16px;
+            border-bottom: 1px solid #ece4da;
+            vertical-align: top;
+        }
+        .rating-table tr:nth-child(even) td {
+            background: #faf6f1;
+        }
+        .rating-table .level-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .level-all {
+            background: #dce7d8;
+            color: #2a4a2a;
+        }
+        .level-15 {
+            background: #f5e6c4;
+            color: #6b4e1e;
+        }
+        .level-18 {
+            background: #f3c9c9;
+            color: #7a2e2e;
+        }
+        /* steps */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+        .step-item {
+            text-align: center;
+            padding: 30px 16px;
+            background: #fff;
+            border-radius: 16px;
+            border: 1px solid #ece4da;
+        }
+        .step-num {
+            width: 48px;
+            height: 48px;
+            background: #c9a77d;
+            color: #1e1b18;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+        .step-item h4 {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        .step-item p {
+            font-size: 0.92rem;
+            color: #5c534a;
+        }
+        /* advantages */
+        .adv-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+        .adv-item {
+            background: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            border-left: 6px solid #c9a77d;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+        }
+        .adv-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #3e342c;
+        }
+        /* warnings */
+        .warning-box {
+            background: #fff8f0;
+            border: 2px solid #dcb48b;
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .warning-box h3 {
+            color: #7a4a1e;
+            margin-bottom: 16px;
+            font-size: 1.4rem;
+        }
+        .warning-box ul {
+            padding-left: 20px;
+        }
+        .warning-box li {
+            margin-bottom: 10px;
+        }
+        /* faq */
+        .faq-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            padding: 0 24px;
+            border: 1px solid #e8dfd4;
+        }
+        .faq-q {
+            font-weight: 600;
+            padding: 20px 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+            color: #3e342c;
+        }
+        .faq-q:after {
+            content: "+";
+            font-size: 1.8rem;
+            color: #c9a77d;
+            font-weight: 300;
+        }
+        .faq-a {
+            padding: 0 0 20px;
+            color: #4a443e;
+            display: none;
+            border-top: 1px dashed #e4dbd0;
+            padding-top: 16px;
+        }
+        .faq-item.open .faq-q:after {
+            content: "−";
+        }
+        .faq-item.open .faq-a {
+            display: block;
+        }
+        /* related */
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .related-links a {
+            background: #fff;
+            padding: 10px 22px;
+            border-radius: 30px;
+            border: 1px solid #d9cdbe;
+            text-decoration: none;
+            color: #4a3f35;
+            font-size: 0.95rem;
+            transition: all .2s;
+        }
+        .related-links a:hover {
+            background: #c9a77d;
+            color: #1e1b18;
+            border-color: #b18f68;
+        }
+        /* footer */
+        .site-footer {
+            background: #1e1b18;
+            color: #a89e94;
+            padding: 40px 0 30px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .footer-content p {
+            max-width: 500px;
+        }
+        .footer-disclaimer {
+            border-top: 1px solid #3c352e;
+            margin-top: 24px;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        /* responsive */
+        @media (max-width: 992px) {
+            .intro-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .cat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .steps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 640px) {
+            .header-inner {
+                flex-direction: column;
+                text-align: center;
+                gap: 12px;
+            }
+            .main-nav ul {
+                gap: 16px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .hero h2 {
+                font-size: 1.9rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .cat-grid {
+                grid-template-columns: 1fr;
+            }
+            .adv-grid {
+                grid-template-columns: 1fr;
+            }
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+            .rating-table-wrap {
+                padding: 20px;
+                overflow-x: auto;
+            }
+            .rating-table {
+                min-width: 600px;
+            }
+            .site-footer .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>情色漫画</h1>
+                <p>成人漫画分级阅读与安全指南</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#intro">漫画概述</a></li>
+                    <li><a href="#types">常见题材</a></li>
+                    <li><a href="#rating">分级体系</a></li>
+                    <li><a href="#platform">选择建议</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>理性认识<span>情色漫画</span>，安全选择成人向作品</h2>
+            <p>情色漫画是以成人读者为目标受众，通过绘画与故事探讨性爱、情感与欲望的漫画类型。本指南将帮助你全面了解其题材、分级与阅读注意事项，建立健康、理性的阅读观念。</p>
+            <div class="hero-tags">
+                <span>分级制度</span>
+                <span>题材分类</span>
+                <span>平台选择</span>
+                <span>隐私安全</span>
+                <span>心理健康</span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- 概述 -->
+        <section class="intro-section" id="intro">
+            <div class="container intro-grid">
+                <div class="intro-text">
+                    <h3>什么是情色漫画？</h3>
+                    <p>情色漫画，又称成人漫画，是指以成年人为创作对象，包含露骨的性爱描写、色情情节或强烈性暗示的漫画作品。与一般商业漫画不同，它在内容上更直接地探讨性欲、亲密关系、性别角色与身体美学。</p>
+                    <p>这类漫画在全球范围内拥有庞大而多元的读者群。在日本，它被细分为"成人向け漫画"；在欧美，则常以"成人漫画"或"色情漫画"作为标签。随着数字出版的发展，情色漫画的创作与传播也更加多样化。</p>
+                    <p>需要强调的是，情色漫画与"色情作品"不完全等同。优秀的成人漫画往往具有完整的剧情、立体的人物与独特的画风，性爱场景服务于故事主题，而非单纯的感官刺激。</p>
+                </div>
+                <div class="intro-facts">
+                    <h4>核心信息速览</h4>
+                    <ul>
+                        <li><span class="badge">1</span>读者年龄限制：通常要求18周岁以上</li>
+                        <li><span class="badge">2</span>内容尺度：从软色情到露骨描写均有</li>
+                        <li><span class="badge">3</span>主要题材：恋爱、奇幻、科幻、悬疑等</li>
+                        <li><span class="badge">4</span>载体形式：纸质单行本、电子版、网络连载</li>
+                        <li><span class="badge">5</span>阅读平台：专业漫画App、网站、实体书店</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分类 -->
+        <section class="cat-section alt" id="types">
+            <div class="container">
+                <h2 class="section-title">常见题材与分类</h2>
+                <p style="text-align:center;color:#5c534a;max-width:800px;margin:0 auto;">情色漫画的题材非常广泛，不同画风与叙事方式吸引着不同审美偏好的读者。</p>
+                <div class="cat-grid">
+                    <div class="cat-card">
+                        <div class="cat-icon">💞</div>
+                        <h3>纯爱系</h3>
+                        <p>侧重描写恋人之间的情感交流与亲密接触，画风细腻唯美，情节以感情发展为主线，性爱场景是情感的延伸而非全部。适合喜欢温暖叙事的读者。</p>
+                    </div>
+                    <div class="cat-card">
+                        <div class="cat-icon">🌌</div>
+                        <h3>奇幻异世界</h3>
+                        <p>将情色元素融入魔法、异种族、异世界冒险等设定中，想象力丰富，角色种族多样，常包含非人类角色与特殊世界观下的亲密关系。</p>
+                    </div>
+                    <div class="cat-card">
+                        <div class="cat-icon">🔍</div>
+                        <h3>悬疑/剧情向</h3>
+                        <p>以紧凑的剧情和复杂的人物关系为看点，情色场景作为情节推进的重要部分，往往具有反转和深度，适合追求故事性的读者。</p>
+                    </div>
+                    <div class="cat-card">
+                        <div class="cat-icon">🏙️</div>
+                        <h3>现实/职场</h3>
+                        <p>以办公室、校园、邻里等现实生活为背景，探讨成年人之间的暧昧与亲密关系，容易引发共鸣，但尺度跨度较大。</p>
+                    </div>
+                    <div class="cat-card">
+                        <div class="cat-icon">🎨</div>
+                        <h3>唯美艺术向</h3>
+                        <p>强调人体美学与画面构图，常常借鉴古典绘画或摄影艺术风格，性爱描写较为含蓄，更注重情绪与氛围的渲染。</p>
+                    </div>
+                    <div class="cat-card">
+                        <div class="cat-icon">⚡</div>
+                        <h3>硬核/重口味</h3>
+                        <p>包含露骨的性行为描写、特殊癖好或极端情节设定。这类作品通常有明确的分级标识，仅面向有特定偏好的成年读者。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分级体系 -->
+        <section class="cat-section" id="rating">
+            <div class="container">
+                <h2 class="section-title">情色漫画的分级体系</h2>
+                <p style="text-align:center;max-width:800px;margin:0 auto 10px;color:#5c534a;">不同国家和地区对成人漫画的分级标准存在差异，但核心原则都是保护未成年人。</p>
+                <div class="rating-table-wrap">
+                    <table class="rating-table">
+                        <thead>
+                            <tr>
+                                <th>等级</th>
+                                <th>年龄限制</th>
+                                <th>内容特征</th>
+                                <th>常见标识</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="level-tag level-all">全年龄</span></td>
+                                <td>所有年龄</td>
+                                <td>无语露骨性爱描写，可能有亲吻或轻度暧昧</td>
+                                <td>一般漫画均可</td>
+                            </tr>
+                            <tr>
+                                <td><span class="level-tag level-15">15+ 建议</span></td>
+                                <td>15周岁以上</td>
+                                <td>含有性暗示、部分裸露画面，但无直白性行为描写</td>
+                                <td>R15</td>
+                            </tr>
+                            <tr>
+                                <td><span class="level-tag level-18">18+ 成人</span></td>
+                                <td>18周岁以上</td>
+                                <td>包含直接性行为画面、性器官描绘，属于法律意义上的情色漫画</td>
+                                <td>R18 / Adult / 成人指定</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin-top:20px;font-size:0.9rem;color:#6b5a4c;">注：国内正规渠道不销售未分级或违规的露骨情色漫画。请通过合法合规的渠道购买已获得出版许可的成人向作品。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 选择建议 -->
+        <section class="cat-section alt" id="platform">
+            <div class="container">
+                <h2 class="section-title">如何选择适合你的情色漫画</h2>
+                <p style="text-align:center;color:#5c534a;">在庞大的作品中找到符合自己审美与接受度的作品需要一些策略。</p>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <div class="step-num">1</div>
+                        <h4>明确偏好</h4>
+                        <p>先思考自己在画风（写实/唯美/夸张）、题材（纯爱/奇幻/悬疑）、尺度（软色情/露骨）上的倾向。</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">2</div>
+                        <h4>查阅评论</h4>
+                        <p>在社区、论坛或评分网站上查看其他读者的评价，重点关注对剧情完整度和画面质量的评价。</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">3</div>
+                        <h4>试读章节</h4>
+                        <p>数字平台通常提供试读。先阅读前几话，确认画风与叙事是否合拍，再决定是否购买。</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">4</div>
+                        <h4>验证分级</h4>
+                        <p>确认作品是否带有明确的分级标识，避免误买超出接受范围的内容，也确保自己符合年龄要求。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 优势与价值 -->
+        <section class="cat-section" id="value">
+            <div class="container">
+                <h2 class="section-title">优秀的成人漫画能带来什么</h2>
+                <div class="adv-grid">
+                    <div class="adv-item">
+                        <h4>艺术欣赏价值</h4>
+                        <p>许多成人漫画家拥有极高的绘画造诣，线条、分镜、光影的运用值得称道。作品本身可作为绘画艺术来欣赏，拓宽审美边界。</p>
+                    </div>
+                    <div class="adv-item">
+                        <h4>情感共鸣与思考</h4>
+                        <p>部分作品细腻地刻画了成人世界的情感困境、性身份认同或亲密关系中的沟通问题，能引发读者深入思考。</p>
+                    </div>
+                    <div class="adv-item">
+                        <h4>性教育辅助</h4>
+                        <p>在性教育不普及的地区，部分作品以相对健康的方式呈现性知识，但需要注意区分虚构与现实，不可全信。</p>
+                    </div>
+                    <div class="adv-item">
+                        <h4>压力释放与娱乐</h4>
+                        <p>对于成年人而言，在私人空间阅读符合个人偏好的成人作品，是一种合法的压力释放与休闲娱乐方式。</p>
+                    </div>
+                </div>
+                <!-- 注意事项 -->
+                <div class="warning-box">
+                    <h3>⚠️ 需要特别注意的事项</h3>
+                    <ul>
+                        <li><strong>年龄限制：</strong>绝大多数情色漫画仅适合18周岁以上读者。未成年人应避免接触此类内容。</li>
+                        <li><strong>现实与虚构：</strong>漫画中的性爱情节是艺术加工的结果，不能作为现实中的行为准则，尤其要注意尊重现实中的性同意。</li>
+                        <li><strong>隐私保护：</strong>在公共网络或共享设备上阅读时，注意使用无痕模式或私人账户，避免个人信息泄露。</li>
+                        <li><strong>版权合规：</strong>请通过正版渠道购买或阅读。盗版漫画损害创作者权益，也可能包含恶意软件。</li>
+                        <li><strong>心理健康：</strong>如果发现自己过度沉迷或产生焦虑、羞耻感等不适情绪，建议适当暂停并寻求专业心理帮助。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="cat-section alt" id="faq">
+            <div class="container">
+                <h2 class="section-title">读者常见问题解答</h2>
+                <div class="faq-wrap">
+                    <div class="faq-item open">
+                        <div class="faq-q">情色漫画与色情作品有何区别？</div>
+                        <div class="faq-a">情色漫画更强调故事性、角色塑造与艺术表现，性爱场景是作品整体的一部分；而色情作品通常以性行为展示为核心目的，剧情相对薄弱。当然两者界限有时模糊，但多数读者能感受到叙事比重的差异。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q">在哪里可以合法阅读情色漫画？</div>
+                        <div class="faq-a">建议通过正规的漫画出版平台或App阅读。部分平台设有成人专区，需实名认证年满18周岁。实体书店的成人漫画区也有销售。请务必确认平台是否合规，避免浏览无资质网站。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q">如何判断一部作品是否适合自己？</div>
+                        <div class="faq-a">先看封面的分级标识，再看简介与评论。你可以关注几个你信任的漫画评论博主，参考他们的推荐。试读永远是做决定前最有效的方法。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q">伴侣或家人发现我在看这类漫画怎么办？</div>
+                        <div class="faq-a">成年人有权拥有私人阅读兴趣。建议坦诚沟通，说明这只是个人消遣，不涉及现实行为。若是伴侣介意，可彼此协商边界，互相尊重。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q">情色漫画会影响现实中的亲密关系吗？</div>
+                        <div class="faq-a">适度阅读一般不会产生负面影响，但若过度沉溺或对现实伴侣产生不切实际的期待，则可能造成困扰。关键在于保持理性与沟通，将虚构与现实区分开。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q">为什么有些漫画没有明确分级？</div>
+                        <div class="faq-a">这通常是因为出版渠道不规范。正规出版方一定会标明年龄限制。遇到无分级的露骨作品，建议谨慎对待，避免下载来路不明的文件。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 相关主题 -->
+        <section class="cat-section" id="related">
+            <div class="container">
+                <h2 class="section-title">延伸阅读主题</h2>
+                <p style="text-align:center;color:#5c534a;">如果你对成人漫画的周边话题感兴趣，可以进一步了解以下方向。</p>
+                <div class="related-links">
+                    <a href="#">成人漫画发展简史</a>
+                    <a href="#">漫画家创作背后的故事</a>
+                    <a href="#">日本成人漫画市场概况</a>
+                    <a href="#">欧美成人漫画风格对比</a>
+                    <a href="#">如何安全地收藏电子漫画</a>
+                    <a href="#">漫画中的性表达与审查</a>
+                    <a href="#">成人向同人志文化</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3 style="color:#e8c9a8;font-size:1.2rem;margin-bottom:8px;">情色漫画阅读指南</h3>
+                    <p>本页面仅提供成人漫画相关的信息介绍与阅读建议，不提供任何色情内容链接或下载资源。请读者遵守当地法律法规，通过正规渠道获取内容。</p>
+                </div>
+                <div>
+                    <p><strong>版权说明</strong><br>尊重创作者版权，支持正版漫画。<br>如遇身心不适，请停止阅读并寻求帮助。</p>
+                </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p>© 2025 情色漫画指南 | 本页面仅供18周岁以上成年人参考 | 请理性阅读</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 交互
+        document.querySelectorAll('.faq-q').forEach(function(q) {
+            q.addEventListener('click', function() {
+                var item = this.parentElement;
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+                          </html>
